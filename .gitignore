@@ -1,0 +1,21 @@
+cd /Users/sunghoonlee/Downloads/java_study2
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+
+# IntelliJ
+.idea/
+*.iml
+out/
+classes/
+
+# Eclipse
+.settings/
+.project
+.classpath
+bin/
+
+# Java build tools
+target/
+build/
+EOF
