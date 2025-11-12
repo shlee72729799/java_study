@@ -18,7 +18,7 @@ public class EqualsExample {
             System.out.println("strVar1과 strVar2는 문자열이 같음");
         }
 
-        String strVar3 = new String("홍길동");
+        String strVar3 = new String("홍길동");//new => 매번 참조 다름
         String strVar4 = new String("홍길동");
 
         if (strVar3 == strVar4) {

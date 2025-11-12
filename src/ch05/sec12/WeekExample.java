@@ -7,7 +7,7 @@ public class WeekExample {
     public static void main(String[] args) {
         Week today = null;
 
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance();//지금 시스템의 시간대/로케일 기준의 달력 객체 하나 주세요
         int week = cal.get(Calendar.DAY_OF_WEEK); // 1(일)~7(토)
 
         switch (week) {
