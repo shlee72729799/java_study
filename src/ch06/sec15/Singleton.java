@@ -1,21 +1,15 @@
 package ch06.sec15;
 
 public class Singleton {
-    // 1) 유일 인스턴스 보관
-    private static final Singleton INSTANCE = new Singleton();
+    //private 접근 권한을 갖는 정적 필드 선언과 초기화
+    private static Singleton singleton = new Singleton();
 
-    // 2) 생성자 private: 외부 new 방지
-    private Singleton() {}
+    //private 접근 권한을 갖는 생성자 선언
+    private Singleton() {
+    }
 
-    // 3) 정적 메소드로 제공
+    //public 접근 권한을 갖는 정적 메소드 선언
     public static Singleton getInstance() {
-        return INSTANCE;
+        return singleton;
     }
-
-    // 예시 메소드
-    public void doWork() {
-        System.out.println("싱글톤 작업 실행");
-    }
-
-
 }
